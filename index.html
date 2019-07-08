@@ -1,364 +1,974 @@
 <!DOCTYPE html>
-<html>
- 
- <head>
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
 
-    <title>IoT Doorlocknode</title>
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+  <title>The EO</title>
+  <meta name="description" content="">  
+  <meta name="author" content="">
 
-    <style>
+   <!-- mobile specific metas
+   ================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-/* The codes present here are not completely my idea as I have referenced them from 'https://remarkjs.com/#1' and from 'https://github.com/gnab/remark' repository. All credit goes to gnab who owns the repository*/
+  <!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">  
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/vendor.css">     
 
-      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
-      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
-      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+   <!-- script
+   ================================================== -->   
+  <script src="js/modernizr.js"></script>
+  <script src="js/pace.min.js"></script>
 
-      body {
- 	font-family: 'Century Gothic';
-	color: #3A60A0;
-	}
+   <!-- favicons
+  ================================================== -->
+  <link rel="icon" type="image/png" href="images/icon.png">
 
-      h1, h2, h3 {
-        font-family: 'Century Gothic';
-        font-weight: 400;
-        margin-bottom: 0;
-      }
+</head>
 
-      .remark-slide-content h1 { font-size: 4em; }
-      .remark-slide-content h2 { font-size: 3em; }
-      .remark-slide-content h3 { font-size: 2em; }
+<body id="top">
 
-      .footnote {
-        position: absolute;
-        bottom: 3em;
-        left: 350px;
-      }
+  <!-- header 
+   ================================================== -->
+   <header>     
+    <div class="row">
 
-      .red { color: #fa0000; }
+      <div class="top-bar">
+        <a class="menu-toggle" href="#"><span>Menu</span></a>
 
-      a, a > code {
-        color: rgb(5, 120, 20);
-        text-decoration: none;
-      }
+        <div class="logo">
+             <a href="index.html">The EO</a>
+          </div>          
 
-      code {
-        border-radius: 20px;
-      }
+        <nav id="main-nav-wrap">
+          <ul class="main-navigation">
+            <li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
+            <li><a class="smoothscroll"  href="#about" title="">About</a></li>
+            <li><a class="smoothscroll"  href="#resume" title="">Resume</a></li>
+            <li><a class="smoothscroll"  href="#portfolio" title="">Portfolio</a></li>
+            <li><a class="smoothscroll"  href="#services" title="">Services</a></li>          
+            <li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>       
+          </ul>
+        </nav>        
+      </div> <!-- /top-bar --> 
+      
+    </div> <!-- /row -->    
+   </header> <!-- /header -->
 
-      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
-      .remark-code-line-highlighted     { background-color: #373832; }
+  <!-- intro section
+   ================================================== -->
+   <section id="intro">   
 
-      .pull-left {
-        float: left;
-        width: 47%;
-      }
-      .pull-right {
-        float: right;
-        width: 47%;
-      }
+    <div class="intro-overlay"></div> 
 
-      .inverse {
-        background: #272822;
-        color:  #ffffff; /*#777872;*/
-        text-shadow: 0 0 20px #333;
-      }
+    <div class="intro-content">
+      <div class="row">
 
-      .inverse h1, .inverse h2 {
-        color: #ffffff;
-        line-height: 0.8em;
-      }
-	  .inverse h4 {
-	  color: #777872;
-	  }
-	  
-	  .inverse1 {
-        background: #e8e4c9;
-        color:  #000000; /*#777872;*/
+        <div class="col-twelve">
+
+          <h5>Welcome To My Website</h5>
+          <center>
+            <img src="images/profile-pic.jpg" alt="Profile Picture" style="width: 150px; border-radius: 300px">
+          </center>
+          <h1>Edeeson Opina</h1>
+
+          <p class="intro-position">
+            <span>Full-Stack Developer</span>
+            <span>Web Artisan</span>
+          </p>
+
+          <a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
+
+        </div>  
         
-      }
-	  .inverse1 h1, .inverse1 h2, .inverse1 h3{
-        color: #777872;
-        line-height: 0.8em;
-		
-      }
-	  
-	  .inverse2 {
-		
-        color: #ffffff;
-        line-height: 0.8em;
-		
-		
-      }
-	  
+      </div>          
+    </div> <!-- /intro-content --> 
 
-      /* Slide-specific styling */
+    <ul class="intro-social">        
+         <li><a href="https://www.facebook.com/EdeesonOpina"><i class="fa fa-facebook"></i></a></li>
+         <li><a href="https://twitter.com/EdeesonOpina"><i class="fa fa-twitter"></i></a></li>
+         <li><a href="https://www.instagram.com/e.opina/"><i class="fa fa-instagram"></i></a></li>
+         <li><a href="https://www.linkedin.com/in/edeesonopina/"><i class="fa fa-linkedin"></i></a></li>
+         <li><a href="https://github.com/EdeesonOpina"><i class="fa fa-github"></i></a></li>
+      </ul> <!-- /intro-social -->        
 
-      #slide-how .slides {
-        font-size: 0.8em;
-        position: absolute;
-        top:  130px;
-        right: 140px;
-      }
-
-      #slide-how .slides h3 {
-        margin-top: 0.2em;
-      }
-
-      #slide-how .slides .first, #slide-how .slides .second {
-        padding: 1px 20px;
-        height: 90px;
-        width: 120px;
-        -moz-box-shadow: 0 0 10px #777;
-        -webkit-box-shadow: 0 0 10px #777;
-        box-shadow: 0 0 10px #777;
-      }
-
-      #slide-how .slides .first {
-        background: #fff;
-        position: absolute;
-        top: 20%;
-        left: 20%;
-        z-index: 1;/* sets front or back position according to number with 0 at the back*/
-      }
-
-      #slide-how .slides .second {
-        position: relative;
-        background: #fff;
-        z-index: 0; 
-      }
-
-      /* Two-column layout */
-      .left-column {
-        color: #777;
-        width: 20%;
-        height: 92%;
-        float: left;
-      }
-
-        .left-column h2:last-of-type, .left-column h3:last-child {
-          color: #000;
-        }
-
-      .right-column {
-        width: 75%;
-        float: right;
-        padding-top: 1em;
-      }
+   </section> <!-- /intro -->
 
 
-/* The codes present here are not completely my idea as I have referenced them from 'https://remarkjs.com/#1' and from 'https://github.com/gnab/remark' repository. All credit goes to gnab who owns the repository*/
+   <!-- about section
+   ================================================== -->
+   <section id="about">  
+
+    <div class="row section-intro">
+      <div class="col-twelve">
+
+        <h5>About</h5>
+        <h1>Let me introduce myself.</h1>
+
+        <div class="intro-info">
+
+          <img src="images/profile-pic.jpg" alt="Profile Picture">
+
+          <p class="lead">– I started being a freelance developer as early as 18 years old I
+started first as a Web Designer since I was trying to tinker the Bootstrap Framework and by the
+age of 19 years old I worked with the PHP language and started to develop not only the web
+design but also the system itself. Later decided to research about frameworks then used those
+new technologies to improve my projects.</p>
+        </div>        
+
+      </div>      
+    </div> <!-- /section-intro -->
+
+    <div class="row about-content">
+
+      <div class="col-six tab-full">
+
+        <h3>Profile</h3>
+        <p>I’m using the Laravel Framework as my top choice when
+starting off a web development project which focuses more on security and easier query
+building that saves so much time when developing a web project. Combining it with AngularJS
+makes it more dynamically beautiful while maintaining the security of your web project.</p>
+
+        <ul class="info-list">
+          <li>
+            <strong>Fullname:</strong>
+            <span>Edeeson Opina</span>
+          </li>
+          <li>
+            <strong>Birth Date:</strong>
+            <span>September 10, 1994</span>
+          </li>
+          <li>
+            <strong>Job:</strong>
+            <span>Laravel Developer</span>
+          </li>
+          <li>
+            <strong>Email:</strong>
+            <span>edeesonopinav4@gmail.com</span>
+          </li>
+          <li>
+            <strong>Contact:</strong>
+            <span>(+63) 9563919724</span>
+          </li>
+
+        </ul> <!-- /info-list -->
+
+      </div>
+
+      <div class="col-six tab-full">
+
+        <h3>Skills</h3>
+
+        <ul class="skill-bars">
+            <li>
+            <div class="progress percent90"><span>90%</span></div>
+            <strong>Laravel</strong>
+           </li>
+           <li>
+            <div class="progress percent80"><span>80%</span></div>
+            <strong>AngularJS</strong>
+           </li>
+           <li>
+            <div class="progress percent90"><span>90%</span></div>
+            <strong>PHP</strong>
+           </li>
+           <li>
+            <div class="progress percent90"><span>90%</span></div>
+            <strong>HTML5</strong>
+           </li>
+           <li>
+            <div class="progress percent85"><span>85%</span></div>
+            <strong>CSS3</strong>
+           </li>
+           <li>
+            <div class="progress percent70"><span>70%</span></div>
+            <strong>JQuery</strong>
+           </li>
+      
+        </ul> <!-- /skill-bars -->    
+
+      </div>
+
+    </div>
+
+    <div class="row button-section">
+      <div class="col-twelve">
+        <a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
+        <a href="files/RESUME.pdf" title="Download CV" class="button button-primary" download>Download CV</a>
+      </div>      
+    </div>
+
+   </section> <!-- /process-->    
 
 
-    </style>
+   <!-- resume Section
+   ================================================== -->
+  <section id="resume" class="grey-section">
+
+    <div class="row section-intro">
+      <div class="col-twelve">
+
+        <h5>Resume</h5>
+        <h1>More of my credentials.</h1>
+
+        
+
+      </div>      
+    </div> <!-- /section-intro--> 
+
+    <div class="row resume-timeline">
+
+      <div class="col-twelve resume-header">
+
+        <h2>Work Experience</h2>
+
+      </div> <!-- /resume-header -->
+
+      <div class="col-twelve">
+
+        <div class="timeline-wrap">
+
+          <div class="timeline-block">
+
+            <div class="timeline-ico">
+              <i class="fa fa-briefcase"></i>
+            </div>
+
+            <div class="timeline-header">
+              <h3>Laravel Developer</h3>
+              <p>December 2017 - Present</p>
+            </div>
+
+            <div class="timeline-content">
+              <h4>Connected Women</h4>
+              <p>We are a global community of tech-powered women. #connectedwomen. We put the spotlight on our experts, sharing their expertise and helping them get seen, found, and talked about. We foster intelligent conversation among like-minded individuals, for collaboration, and network-building. We curate freelance and remote work opportunities. As well as the latest tips, tools, and hacks for remote teams. We inspire our community to focus on achieving the success, happiness, and balance they want in life.
+</p>
+            </div>
+
+          </div> <!-- /timeline-block -->
+
+          <div class="timeline-block">
+
+            <div class="timeline-ico">
+              <i class="fa fa-briefcase"></i>
+            </div>
+
+            <div class="timeline-header">
+              <h3>Full-Stack Developer</h3>
+              <p>July 2015 - July 2016</p>
+            </div>
+
+            <div class="timeline-content">
+              <h4>Zip Travel Philippines</h4>
+              <p>Zip Travel Philippines (Inner Outer Travel, Inc.), established in 2009, is an affiliate of Zip Travel international, a
+world leader in the work and travel consultancy business with corporate office in Lithuania and satellite offices in
+the US and various countries in Europe.
+Zip Travel International is proud to help facilitate students with the Exchange Visitor Program (EVP).
+</p>
+            </div>
+
+          </div> <!-- /timeline-block -->
+
+          <div class="timeline-block">
+
+            <div class="timeline-ico">
+              <i class="fa fa-briefcase"></i>
+            </div>
+
+            <div class="timeline-header">
+              <h3>Full-Stack Developer</h3>
+              <p>July 2015 - July 2016</p>
+            </div>
+
+            <div class="timeline-content">
+              <h4>Hospitality Institute of America-Philippines</h4>
+              <p>HIAP offers Culinary Shipboard training, food & beverage training programs in order to meet the requirements of
+various international cruise lines and land based hotel establishments. It also offers short course programs for
+Hospitality and Tourism Management that caters for Senior High students, college students and professionals. A
+customized training program is also available for students and professionals who wish to undergo half day or
+whole day training seminar-workshops based on the topic of interest.</p>
+            </div>
+
+          </div> <!-- /timeline-block -->
+
+          <div class="timeline-block">
+
+            <div class="timeline-ico">
+              <i class="fa fa-briefcase"></i>
+            </div>
+
+            <div class="timeline-header">
+              <h3>Junior System Developer
+</h3>
+              <p>June 2015 – November 2015
+</p>
+            </div>
+
+            <div class="timeline-content">
+              <h4>Maxima Machineries Inc.</h4>
+              <p>As the exclusive distributor of Komatsu in the Philippines, Maxima sells and services the complete line of Komatsu
+heavy equipment – Bulldozers, Hydraulic Excavators, Wheel Loaders, Motor Graders, Dump Trucks, Vibratory
+Rollers, Mini Excavators, and Generator Sets.
+Maxima has also acquired the exclusive distributorship of several high performance machine brands, from Japan
+(Furukawa: Hydraulic Breakers), Germany (Bomag: Compaction Machines) and Korea (Hyundai: Trucks & Bus).
+At Maxima, we are committed to provide our clients with reliable, high quality heavy equipment which is backed
+by our Passion for Customer Satisfaction.
+</p>
+            </div>
+
+          </div> <!-- /timeline-block -->
+
+        </div> <!-- /timeline-wrap -->        
+
+      </div> <!-- /col-twelve -->
+      
+    </div> <!-- /resume-timeline -->
+    
+    <div class="row resume-timeline">
+
+      <div class="col-twelve resume-header">
+
+        <h2>Education</h2>
+
+      </div> <!-- /resume-header -->
+
+      <div class="col-twelve">
+
+        <div class="timeline-wrap">
+
+          <div class="timeline-block">
+
+            <div class="timeline-ico">
+              <i class="fa fa-graduation-cap"></i>
+            </div>
+
+            <div class="timeline-header">
+              <h3>BSIT</h3>
+              <p>December 2016 - March 2017</p>
+            </div>
+
+            <div class="timeline-content">
+              <h4>FEU Diliman</h4>
+              <p>FEU Diliman (FEU-FERN College) was established in 1994 to commemorate the birth centennial of Nicanor Reyes Sr., the founder and the first president of FEU. He is the pioneer of professionalizing the practice of accounting for Filipinos. The campus was originally constructed for the Institute of Technology in the 1970s. The College offers degree courses and started offering elementary and secondary education since year 2000s.</p>
+            </div>
+
+          </div> <!-- /timeline-block -->
+
+          <div class="timeline-block">
+
+            <div class="timeline-ico">
+              <i class="fa fa-graduation-cap"></i>
+            </div>
+
+            <div class="timeline-header">
+              <h3>BSIT Specialized In Web and Mobile Applications</h3>
+              <p>June 2012 - May 2015</p>
+            </div>
+
+            <div class="timeline-content">
+              <h4>FEU Institute of Technology</h4>
+              <p>FEU Institute of Technology (formerly FEU – East Asia College) is a vibrant community of technology scholars and professionals seeking to serve the Nation, the Industry, and the World.
+
+The College is a coeducational, nondenominational institution providing quality education in the fields of Engineering and Information Technology.
+FEU Institute of Technology, also known as FEU Tech, occupies two major buildings, one of which is the Original FEU Technology Building along Nicanor Reyes St. (Morayta), in the heart of Manila’s famous University Belt, and located within Far Eastern University’s prestigious campus, which has been a vital part of the city’s legacy for over 85 years.
+</p>
+            </div>
+
+          </div> <!-- /timeline-block -->
+
+        </div> <!-- /timeline-wrap -->        
+
+      </div> <!-- /col-twelve -->
+      
+    </div> <!-- /resume-timeline -->
+    
+  </section> <!-- /features -->
+
+  <section id="services">
+
+    <div class="overlay"></div>
+
+    <div class="row section-intro">
+      <div class="col-twelve">
+
+        <h5>Services</h5>
+        <h1>What Can I Do For You?</h1>
+
+        <p class="lead">Here are my skills that you might need.</p>
+
+      </div>      
+    </div> <!-- /section-intro -->
+
+    <div class="row services-content">
+
+      <div id="owl-slider" class="owl-carousel services-list">
+
+          <div class="service"> 
+
+            <span class="icon"><i class="icon-earth"></i></span>            
+
+              <div class="service-content"> 
+
+                 <h3>Web Design</h3>             
+            </div>             
+
+        </div> <!-- /service -->
+
+        <div class="service"> 
+
+          <span class="icon"><i class="icon-window"></i></span>                          
+
+              <div class="service-content"> 
+
+                <h3>Web Development</h3>                </div>                            
+
+         </div> <!-- /service -->
+
+        <div class="service">
+
+          <span class="icon"><i class="icon-toggles"></i></span>                
+
+              <div class="service-content">
+
+                <h3>UI/UX Design</h3>              
+              </div>                
+
+        </div> <!-- /service -->
+
+         <div class="service">
+
+          <span class="icon"><i class="icon-chat"></i></span>                
+
+              <div class="service-content">
+
+                 <h3>Consultancy</h3> 
+                
+              </div>                 
+
+         </div> <!-- /service -->
+
+        </div> <!-- /services-list -->
+      
+    </div> <!-- /services-content -->
+    
+  </section> <!-- /services --> 
 
 
-  </head>
+  <!-- Portfolio Section
+   ================================================== -->
+  <section id="portfolio">
 
-  <body>
+    <div class="row section-intro">
+      <div class="col-twelve">
+
+        <h5>Portfolio</h5>
+        <h1>Works.</h1>
+
+        <p class="lead">Here are the websites that I've created. Feel free to browse it out.</p>
+
+      </div>      
+    </div> <!-- /section-intro--> 
+
+    <div class="row portfolio-content">
+
+      <div class="col-twelve">
+
+        <!-- portfolio-wrapper -->
+           <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
+
+            <div class="bgrid folio-item">
+                 <div class="item-wrap">
+                  <img src="images/portfolio/liberty.jpg" alt="Zip Travel Philippines">
+                    <a href="#modal-01" class="overlay">                                 
+                       <div class="folio-item-table">
+                        <div class="folio-item-cell">
+                         <h3 class="folio-title">Zip Travel Philippines</h3>                   
+                         <span class="folio-types">
+                            Website
+                         </span>
+                     </div>                         
+                       </div>                    
+                    </a>
+                 </div>                
+              </div> <!-- /folio-item -->
+
+              <div class="bgrid folio-item">
+                 <div class="item-wrap">
+                  <img src="images/portfolio/shutterbug.jpg" alt="The Gorgeous Vea">
+                  <a href="#modal-02" class="overlay">                                    
+                       <div class="folio-item-table">
+                        <div class="folio-item-cell">
+                          <h3 class="folio-title">The Gorgeous Vea</h3>                   
+                        <span class="folio-types">
+                            Website
+                        </span>           
+                     </div>                           
+                       </div>                    
+                    </a>
+                 </div>
+              </div> <!-- /folio-item -->
+
+              <div class="bgrid folio-item">
+                 <div class="item-wrap">
+                  <img src="images/portfolio/clouds.jpg" alt="Talking Hands PH">
+                    <a href="#modal-03" class="overlay">                                  
+                       <div class="folio-item-table">
+                        <div class="folio-item-cell">
+                          <h3 class="folio-title">Talking Hands PH</h3>                   
+                        <span class="folio-types">
+                            Website
+                        </span>           
+                     </div>                           
+                       </div>                    
+                    </a>
+                 </div>
+              </div> <!-- /folio-item -->
   
 
-    <textarea id="source">
+              <div class="bgrid folio-item">
+                 <div class="item-wrap">
+                  <img src="images/portfolio/lighthouse.jpg" alt="MG Square">
+                    <a href="#modal-05" class="overlay">                                  
+                       <div class="folio-item-table">
+                        <div class="folio-item-cell">
+                          <h3 class="folio-title">MG Square</h3>                   
+                        <span class="folio-types">
+                            Website
+                        </span>           
+                     </div>                           
+                       </div>                    
+                    </a>
+                 </div>
+              </div> <!-- /folio-item -->
+
+              <div class="bgrid folio-item">
+                 <div class="item-wrap">
+                  <img src="images/portfolio/salad.jpg" alt="Connected Women">
+                    <a href="#modal-06" class="overlay">
+                       <div class="folio-item-table">
+                        <div class="folio-item-cell">
+                          <h3 class="folio-title">Connected Women</h3>                    
+                        <span class="folio-types">
+                            Website
+                        </span>           
+                     </div>                         
+                       </div>                    
+                    </a>
+                 </div>
+              </div> <!-- /folio-item -->   
+
+              <!-- modal popups - begin
+              ============================================================= -->
+              <div id="modal-01" class="popup-modal slider mfp-hide"> 
+
+              <div class="media">
+                <img src="images/portfolio/modals/m-liberty.jpg" alt="" />
+              </div>        
+
+             <div class="description-box">
+                <h4>Zip Travel Philippines</h4>          
+                <p>A website which also has a portal for their clients</p>
+
+                <div class="categories">Website</div>                    
+             </div>
+
+               <div class="link-box">
+                  <a href="https://ziptravel.com.ph">Details</a>
+                <a href="#" class="popup-modal-dismiss">Close</a>
+               </div>         
+
+           </div> <!-- /modal-01 -->
+
+           <div id="modal-02" class="popup-modal slider mfp-hide">  
 
-name: inverse
-layout: true
-class: center, middle, inverse
+              <div class="media">
+                <img src="images/portfolio/modals/m-shutterbug.jpg" alt="" />
+              </div>        
 
----
+             <div class="description-box">
+                <h4>The Gorgeous Vea</h4>         
+                <p>A personal blog website for The Gorgeous Vea.</p>
 
-# IoT Doorlocknode
+                <div class="categories">Website</div>                     
+             </div>
 
-####.footnote[by Nick Petalcorin]
----
+               <div class="link-box">
+                  <a href="http://www.thegorgeousvea.com">Details</a>
+                <a href="#" class="popup-modal-dismiss">Close</a>
+               </div>         
 
+           </div> <!-- /modal-02 -->
 
-name: inverse
-layout: true
-class: inverse
+           <div id="modal-03" class="popup-modal slider mfp-hide">  
 
----
+              <div class="media">
+                <img src="images/portfolio/modals/m-clouds.jpg" alt="" />
+              </div>        
 
-### Introduction
-	
+             <div class="description-box">
+                <h4>Clouds</h4>         
+                <p>A website for the deaf community which also has a monitoring volunteers and can accept donations worlwide via paypal.</p>
 
-<p style="color:#777872;font-size:40px;">The IOT doorlocknode project is based on ESP32 module which is the successor of ESP8266. It adds an extra CPU core, faster Wi-Fi, more GPIOs, and supports Bluetooth 4.2 and Bluetooth low energy. By the help of this module we can lock and unlock the door.</p>
+                <div class="categories">Website</div>                     
+             </div>
 
+               <div class="link-box">
+                  <a href="http://talkinghands.ph">Details</a>
+                <a href="#" class="popup-modal-dismiss">Close</a>
+               </div>         
 
----
+           </div> <!-- /modal-03 -->
 
-name: inverse1
-layout: true
-class: inverse1
+           <div id="modal-04" class="popup-modal slider mfp-hide">  
 
----
+              <div class="media">
+                <img src="images/portfolio/modals/m-beetle.jpg" alt="" />
+              </div>        
 
-### Hardware
+             <div class="description-box">
+                <h4>iMetrics Online Survey</h4>         
+                <p>A website that can create survey and help them create a report of a specific topic.</p>
 
-* ESP32
-* Servo motor
-* Jumper Wires
-* Micro usb
-* Breadboard
-* Power supply (4v-6v)
+                <div class="categories">Website</div>                     
+             </div>
 
-### Software
+               <div class="link-box">
+                <a href="#" class="popup-modal-dismiss">Not Available</a>
+                <a href="#" class="popup-modal-dismiss">Close</a>
+               </div>         
 
-* Arduino IDE
+           </div> <!-- /modal-04 -->
 
----
-name: inverse1
-layout: true
-class: inverse1
+           <div id="modal-05" class="popup-modal slider mfp-hide">  
 
-### Schematic
+              <div class="media">
+                <img src="images/portfolio/modals/m-lighthouse.jpg" alt="" />
+              </div>        
 
----
-name: how
-.left-column[
-#### Circuitry of Doorlocknode
-]
-.right-column[ Before we start we need 4v-6v power supply to work properly our project
+             <div class="description-box">
+                <h4>MG Square</h4>         
+                <p>An online shopping website powered by Paypal and also has its own item customization.</p>
 
-```remark
-Mount the ESP32 on your breadboard.
-Connect the VCC of Servo to VCC of Power supply.
-Connect the GND of Servo to GND of ESP32.
-Connect the GND of Power suppy to GND of ESP32.
-Connect the SIGNAL of Servo to GPIO14 of ESP32.
+                <div class="categories">Website</div>                    
+             </div>
 
+               <div class="link-box">
+                  <a href="http://www.mgsquare.com.ph">Details</a>
+                <a href="#" class="popup-modal-dismiss">Close</a>
+               </div>         
 
-```
+           </div> <!-- /modal-05 -->
 
-<img src="https://github.com/ucamptech/iot_DoorLockNode/blob/master/Doc/Schematic%20of%20Servo%20with%20ESP32.jpg?raw=true" alt="Arduino" width="450" height="320">
+           <div id="modal-06" class="popup-modal slider mfp-hide">  
 
-]
+              <div class="media">
+                <img src="images/portfolio/modals/m-salad.jpg" alt="" />
+              </div>        
 
+             <div class="description-box">
+                <h4>Connected Women</h4>          
+                <p>A website that connects the entrepreneur and the virtual assistant especially for women</p>
 
+                <div class="categories">Website</div>                     
+             </div>
 
----
-name: inverse1
-layout: true
-class: inverse1
+               <div class="link-box">
+                  <a href="https://jobs.connectedwomen.co">Details</a>
+                <a href="#" class="popup-modal-dismiss">Close</a>
+               </div>         
 
-### Codes
----
-name: how
-.left-column[
-####Uploading the codes
-]
-.right-column[
+           </div> <!-- /modal-06 -->
 
-After doing the schematic of project we need to upload the codes on the Arduino IDE sketch.
-Before upload our codes we need to change the following lines with our network credentials.
 
+           <!-- modal popups - end
+              ============================================================= -->
 
-```
-const char* wifi_name = "";
-const char* wifi_pass = "";
+           </div> <!-- /portfolio-wrapper --> 
 
+      </div>  <!-- /twelve -->   
 
-```
+    </div> <!-- /portfolio-content --> 
+    
+  </section> <!-- /portfolio --> 
 
-We can upload the codes after we already changed the wifi name and password.
-]
----
+  
+  <!-- services Section
+   ================================================== -->
+  
 
-name: inverse1
-layout: true
-class: inverse1
 
----
-###Benefits
-.left-column[
+  <!-- stats Section
+   ================================================== -->
+  <section id="stats" class="count-up">
 
+    <div class="row">
+      <div class="col-twelve">
 
-]
-.right-column[
-* Easy to mount and install
+        <div class="block-1-6 block-s-1-3 block-tab-1-2 block-mob-full stats-list">
 
-* Secure your home or office.
+          <div class="bgrid stat">
 
-* You are updated if the door is open or close even you are far from your home or office
+            <div class="icon-part">
+              <i class="icon-pencil-ruler"></i>
+            </div>
 
-* You can close and open the door lock even you are far. 
+            <h3 class="stat-count">
+              26
+            </h3>
 
-* You can lock if someone forgot to lock the door.
+            <h5 class="stat-title">
+              Projects Completed
+            </h5>
 
-* You don't need to bring your key.
+          </div> <!-- /stat -->         
 
-* You can count how many times the door was open and closed with real time clock.
-]
+          <div class="bgrid stat">
 
----
-name: inverse1
-layout: true
-class: inverse1
+            <div class="icon-part">
+              <i class="icon-users"></i>
+            </div>
 
----
+            <h3 class="stat-count">
+              18
+            </h3>
 
-###Learnings
-.left-column[
+            <h5 class="stat-title">
+              Happy Clients
+            </h5>
 
+          </div> <!-- /stat -->
 
-]
-.right-column[
-* The GPIOs of every modules are important.
+          <div class="bgrid stat">
 
-* Make sure which GPIO pins should you use.
+            <div class="icon-part">
+              <i class="icon-badge"></i>
+            </div>
 
-* The libraries are so very important.
+            <h3 class="stat-count">
+              29
+            </h3>
 
-* How Web API works.
+            <h5 class="stat-title">
+              Certificates
+            </h5>
 
-* Always check the baudrate on Arduino IDE.
+          </div> <!-- /stat -->                 
 
-* Before you plug the power supply make sure the wiring connections.
+          <div class="bgrid stat">
 
-* After holding the BOOT/FLASH button while uploading always press the EN button of ESP32 to work.
-]
----
-name: inverse1
-layout: true
-class: inverse1
+            <div class="icon-part">
+              <i class="icon-light-bulb"></i>
+            </div>
 
----
+            <h3 class="stat-count">
+              3
+            </h3>
 
-###Challenges
-.left-column[
+            <h5 class="stat-title">
+              Hackathons
+            </h5>
 
+          </div> <!-- /stat -->
 
-]
-.right-column[
-* I follow the tutorial related on my project and sometimes the codes are not working so I need to debug.
+          <div class="bgrid stat">
 
-* Before I started on this project I dont have any idea of this ESP32
+            <div class="icon-part">
+              <i class="icon-cup"></i>
+            </div>
 
-* The ESP32 is different from other module because she don't support other terms of code.
+            <h3 class="stat-count">
+              1500
+            </h3>
 
-]
----
-name: inverse
-layout: true
-class: center, middle, inverse
----
-## **Thank you!**
+            <h5 class="stat-title">
+              Coffee Cups
+            </h5>
 
+          </div> <!-- /stat -->
 
+          <div class="bgrid stat">
 
+            <div class="icon-part">
+              <i class="icon-clock"></i>
+            </div>
 
-    </textarea>
+            <h3 class="stat-count">
+              10000
+            </h3>
 
-    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
-    </script>
+            <h5 class="stat-title">
+              Hours
+            </h5>
 
-    <script src="https://remarkjs.com/remark.language.js"></script>
-    <script>
-      var slideshow = remark.create({
-          highlightStyle: 'monokai',
-          highlightLanguage: 'remark',
-          highlightLines: true
-        }) ;
-    </script>
+          </div> <!-- /stat -->
 
-  </body>
+        </div> <!-- /stats-list -->
+
+      </div> <!-- /twelve -->
+    </div> <!-- /row -->
+
+  </section> <!-- /stats -->
+
+  
+   <!-- contact
+   ================================================== -->
+  <section id="contact">
+
+    <div class="row section-intro">
+      <div class="col-twelve">
+
+        <h5>Contact</h5>
+        <h1>I'd Love To Hear From You.</h1>
+
+        <p class="lead">If you wish to contact me fill up the form below and I'll reply as fast as I can.</p>
+
+      </div> 
+    </div> <!-- /section-intro -->
+
+    <div class="row contact-form">
+
+      <div class="col-twelve">
+
+            <!-- form -->
+            <form name="contactForm" id="contactForm" method="post" action="">
+            <fieldset>
+
+                  <div class="form-field">
+               <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
+                  </div>
+                  <div class="form-field">
+                 <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
+                 </div>
+                  <div class="form-field">
+                 <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
+                 </div>                       
+                  <div class="form-field">
+                    <textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
+                 </div>                      
+                 <div class="form-field">
+                     <button class="submitform">Submit</button>
+                     <div id="submit-loader">
+                        <div class="text-loader">Sending...</div>                             
+                    <div class="s-loader">
+                    <div class="bounce1"></div>
+                    <div class="bounce2"></div>
+                    <div class="bounce3"></div>
+                </div>
+              </div>
+                  </div>
+
+            </fieldset>
+          </form> <!-- Form End -->
+
+            <!-- contact-warning -->
+            <div id="message-warning">              
+            </div>            
+            <!-- contact-success -->
+          <div id="message-success">
+               <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+          </div>
+
+         </div> <!-- /col-twelve -->
+      
+    </div> <!-- /contact-form -->
+
+    <div class="row contact-info">
+
+      <div class="col-four tab-full">
+
+        <div class="icon">
+          <i class="icon-pin"></i>
+        </div>
+
+        <h5>Where to find me</h5>
+
+        <p>
+            The Fairview,
+            Quezon City<br>
+            1110 PH
+            </p>
+
+      </div>
+
+      <div class="col-four tab-full collapse">
+
+        <div class="icon">
+          <i class="icon-mail"></i>
+        </div>
+
+        <h5>Email Me At</h5>
+
+        <p>edeesonopinav4@gmail.com    
+         </p>
+
+      </div>
+
+      <div class="col-four tab-full">
+
+        <div class="icon">
+          <i class="icon-phone"></i>
+        </div>
+
+        <h5>Call Me At</h5>
+
+        <p>
+          Mobile: (+63) 967 605 6772
+         </p>
+
+      </div>
+      
+    </div> <!-- /contact-info -->
+    
+  </section> <!-- /contact -->
+
+
+   <!-- footer
+   ================================================== -->
+
+   <footer>
+      <div class="row">
+
+        <div class="col-six tab-full pull-right social">
+
+          <ul class="footer-social">        
+            <li><a href="https://www.facebook.com/EdeesonOpina"><i class="fa fa-facebook"></i></a></li>
+         <li><a href="https://twitter.com/EdeesonOpina"><i class="fa fa-twitter"></i></a></li>
+         <li><a href="https://www.instagram.com/e.opina/"><i class="fa fa-instagram"></i></a></li>
+         <li><a href="https://www.linkedin.com/in/edeesonopina/"><i class="fa fa-linkedin"></i></a></li>
+         <li><a href="https://github.com/EdeesonOpina"><i class="fa fa-github"></i></a></li>
+         </ul> 
+            
+        </div>
+
+        <div class="col-six tab-full">
+          <div class="copyright">
+              <span>© THE EO 2018.</span>            
+             </div>                     
+          </div>
+
+          <div id="go-top">
+             <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+          </div>
+
+        </div> <!-- /row -->      
+   </footer>  
+
+   <div id="preloader"> 
+      <div id="loader"></div>
+   </div> 
+
+   <!-- Java Script
+   ================================================== --> 
+   <script src="js/jquery-2.1.3.min.js"></script>
+   <script src="js/plugins.js"></script>
+   <script src="js/main.js"></script>
+
+</body>
 
 </html>
